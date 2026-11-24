@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aroma & Ember — Artisanal specialty coffee roastery and hearth bakery. Single-origin roasts, wild-fermented pastries, and intentional craft.">
+  <title>Aroma & Ember | Artisanal Specialty Roastery & Bakery</title>
+
+  <!-- Google Fonts: Cormorant Garamond (Editorial Serif) & Plus Jakarta Sans (Modern Geometric Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       1. STICKY GLASSMORPHIC NAVBAR
+  ========================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" aria-label="Aroma & Ember Homepage">
+        <svg class="brand-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M16 3C11 8 8 13.5 8 19C8 23.4183 11.5817 27 16 27C20.4183 27 24 23.4183 24 19C24 13.5 21 8 16 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 11C14 14 13 17 13 19.5C13 21.433 14.3431 23 16 23C17.6569 23 19 21.433 19 19.5C19 17 18 14 16 11Z" fill="currentColor" opacity="0.6"/>
+          <path d="M12 28C13.2 29.2 14.5 29.8 16 29.8C17.5 29.8 18.8 29.2 20 28" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-title">Aroma <span class="brand-amp">&amp;</span> Ember</span>
+          <span class="brand-tagline">Roastery &amp; Bakery</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-desktop" aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#specials" class="nav-link">Today's Special</a></li>
+          <li><a href="#craft" class="nav-link">Our Craft</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#location" class="nav-link">Location &amp; Hours</a></li>
+        </ul>
+        <div class="nav-cta-wrapper">
+          <button class="btn btn-primary btn-pill" id="open-reserve-btn">Reserve a Table</button>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobile-menu" aria-hidden="true">
+      <div class="mobile-drawer-inner">
+        <ul class="mobile-nav-links">
+          <li><a href="#menu" class="mobile-nav-link">Menu</a></li>
+          <li><a href="#specials" class="mobile-nav-link">Today's Special</a></li>
+          <li><a href="#craft" class="mobile-nav-link">Our Craft</a></li>
+          <li><a href="#reviews" class="mobile-nav-link">Reviews</a></li>
+          <li><a href="#location" class="mobile-nav-link">Location &amp; Hours</a></li>
+        </ul>
+        <div class="mobile-cta-box">
+          <button class="btn btn-primary btn-pill full-width" id="mobile-reserve-btn">Reserve a Table</button>
+          <p class="mobile-note">742 Ember Way, Arts District • Open Daily</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         2. EDITORIAL HERO SECTION
+    ========================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-backdrop">
+        <img 
+          src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=2000&q=85" 
+          alt="Warm, atmospheric morning light flooding into Aroma & Ember café" 
+          class="hero-image"
+          loading="eager"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-text-block">
+          <div class="eyebrow-tag">
+            <span class="eyebrow-dot"></span>
+            <span>Small-Batch Roastery &amp; Bakery</span>
+          </div>
+
+          <h1 class="hero-heading">
+            Crafted with fire, <br>
+            <em class="editorial-em">brewed with soul.</em>
+          </h1>
+
+          <p class="hero-subheading">
+            We honor the patience of natural fermentation and slow-roasted, ethically sourced single-origin coffees. Step in from the noise for thoughtful drinks and hearth-baked morning provisions.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary btn-pill">Explore Menu</a>
+            <a href="#location" class="btn btn-ghost btn-pill">Find Us &amp; Hours</a>
+          </div>
+
+          <div class="hero-badges">
+            <div class="hero-badge-item">
+              <span class="badge-num">88+</span>
+              <span class="badge-label">SCA Cup Score</span>
+            </div>
+            <div class="badge-divider"></div>
+            <div class="hero-badge-item">
+              <span class="badge-num">100%</span>
+              <span class="badge-label">Direct Trade</span>
+            </div>
+            <div class="badge-divider"></div>
+            <div class="hero-badge-item">
+              <span class="badge-num">4:00 AM</span>
+              <span class="badge-label">Fresh Hearth Bake</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. TODAY'S SPECIAL HIGHLIGHT SHOWCASE
+    ========================================================== -->
+    <section class="specials-section" id="specials">
+      <div class="container">
+        
+        <div class="special-card-wrapper">
+          <div class="special-highlight-card">
+            
+            <div class="special-visual">
+              <img 
+                src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1000&q=80" 
+                alt="Cardamom Rose Pistachio Latte served alongside a warm flaky pastry"
+                class="special-img"
+                loading="lazy"
+              >
+              <span class="special-ribbon">Today's Chef Pairing</span>
+            </div>
+
+            <div class="special-info">
+              <div class="special-meta">
+                <span class="special-badge">Signature Pairing</span>
+                <span class="special-availability">Limited Daily Batch • Until 2 PM</span>
+              </div>
+
+              <h2 class="special-title">Cardamom Rose Pistachio Latte &amp; Warm Almond Croissant</h2>
+
+              <p class="special-description">
+                Double-pulled heirloom Ethiopian espresso infused with crushed green cardamom pods and organic Damask rose water, crowned with steamed oat velvet and crushed Sicilian pistachios. Paired with our 72-hour laminated almond croissant, baked fresh in the hearth with rich frangipane.
+              </p>
+
+              <div class="special-notes-grid">
+                <div class="flavor-pill">
+                  <span class="pill-label">Origin:</span> Yirgacheffe G1
+                </div>
+                <div class="flavor-pill">
+                  <span class="pill-label">Notes:</span> Floral Jasmine, Roasted Nut, Honeycomb
+                </div>
+              </div>
+
+              <div class="special-footer">
+                <div class="special-pricing">
+                  <span class="price-current">$14.50</span>
+                  <span class="price-original">$17.50</span>
+                  <span class="price-savings">Pairing Savings</span>
+                </div>
+                <button class="btn btn-primary btn-pill" id="order-special-btn">
+                  Reserve This Pairing
+                </button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. SIGNATURE MENU SECTION (FINE-DINING EDITORIAL GRID)
+    ========================================================== -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">The Seasonal Offerings</span>
+          <h2 class="section-title">Artisanal Drinks &amp; Hearth Pastries</h2>
+          <p class="section-subtitle">
+            Every pour is dialed in with micro-precision. Every loaf and laminated pastry is shaped by hand with wild sourdough culture and Normandy butter.
+          </p>
+        </div>
+
+        <div class="menu-two-columns">
+
+          <!-- Column 1: Artisanal Drinks -->
+          <div class="menu-category-card">
+            <div class="category-header">
+              <div class="category-icon-title">
+                <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                  <line x1="6" y1="1" x2="6" y2="4"></line>
+                  <line x1="10" y1="1" x2="10" y2="4"></line>
+                  <line x1="14" y1="1" x2="14" y2="4"></line>
+                </svg>
+                <h3 class="category-title">Artisanal Drinks</h3>
+              </div>
+              <span class="category-tag">Espresso &amp; Brew Bar</span>
+            </div>
+
+            <ul class="menu-list" role="list">
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Smoked Ember Pour-Over</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$7.25</span>
+                </div>
+                <div class="menu-item-desc">
+                  Geisha varietal brewed on chemex over smoldering applewood embers. Notes of bergamot, dark nectarine &amp; raw sugar.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag tag-signature">Signature</span>
+                  <span class="item-tag">Pour-Over Bar</span>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Single-Origin Cortado</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$5.50</span>
+                </div>
+                <div class="menu-item-desc">
+                  Equal parts washed Colombian micro-lot and micro-textured whole milk or organic oat milk. Sweet cacao nib finish.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag">Espresso Bar</span>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Kyoto Slow-Drip Cold Brew</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$6.75</span>
+                </div>
+                <div class="menu-item-desc">
+                  14-hour gravity extraction over Japanese towers. Velvety body, zero bitterness, whiskey and dark plum undertones.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag">Cold Reserve</span>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Wild Blossom Cardamom Chai</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$6.50</span>
+                </div>
+                <div class="menu-item-desc">
+                  Slow-simmered Assam black tea, freshly crushed green cardamom, whole star anise, cracked peppercorn &amp; local wildflower honey.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag">House Botanical</span>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Ceremonial Uji Matcha Latte</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$7.00</span>
+                </div>
+                <div class="menu-item-desc">
+                  First-harvest stone-ground matcha from Kyoto, whisked with spring water and finished with sweet almond milk and raw vanilla bean.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag">Vegan</span>
+                  <span class="item-tag">Organic</span>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Heirloom Espresso Double</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$4.50</span>
+                </div>
+                <div class="menu-item-desc">
+                  Rotating seasonal single-origin pulled on custom Slayer with 93.5°C pre-infusion. Thick crema, candied apricot notes.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag">Rotating Roaster's Pick</span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- Column 2: Freshly Baked Pastries -->
+          <div class="menu-category-card">
+            <div class="category-header">
+              <div class="category-icon-title">
+                <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+                  <path d="M12 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm4 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"></path>
+                </svg>
+                <h3 class="category-title">Freshly Baked Pastries</h3>
+              </div>
+              <span class="category-tag">Hearth Oven • 4:00 AM</span>
+            </div>
+
+            <ul class="menu-list" role="list">
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Cardamom &amp; Orange Morning Bun</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$5.75</span>
+                </div>
+                <div class="menu-item-desc">
+                  Laminated croissant ribbon coated in freshly milled cardamom sugar, candied orange zest, and caramelized butter base.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag tag-signature">Signature</span>
+                  <span class="item-tag">Warm Serve</span>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Valrhona Pain au Chocolat</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$6.00</span>
+                </div>
+                <div class="menu-item-desc">
+                  Double batons of 70% Guanaja dark chocolate rolled inside 36 distinct layers of cultured French butter pastry.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag">Classic Viennoiserie</span>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Mission Fig &amp; Chèvre Danish</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$6.50</span>
+                </div>
+                <div class="menu-item-desc">
+                  Poached black mission figs, whipped goat cheese custard, thyme sprig glaze, and crushed toasted hazelnuts.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag">Sweet &amp; Savory</span>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Brown Butter Marcona Almond Scone</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$5.25</span>
+                </div>
+                <div class="menu-item-desc">
+                  Tender crumb folded with browned pasture butter and toasted Spanish almonds, topped with vanilla-bean sea salt icing.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag">Vegetarian</span>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Wild Forest Mushroom Tartine</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$8.50</span>
+                </div>
+                <div class="menu-item-desc">
+                  Toasted country sourdough, pan-roasted chanterelles and cremini, garlic confit, cashew ricotta, and micro arugula.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag">Plant-Based</span>
+                  <span class="item-tag">Savory Hearth</span>
+                </div>
+              </li>
+
+              <li class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Roasted Pistachio Frangipane Braid</span>
+                  <span class="menu-dotted-line"></span>
+                  <span class="menu-item-price">$6.25</span>
+                </div>
+                <div class="menu-item-desc">
+                  Hand-braided pastry filled with Bronte pistachio paste, sour cherry reduction, and toasted flaked almonds.
+                </div>
+                <div class="menu-item-meta">
+                  <span class="item-tag">Special Reserve</span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="menu-note-box">
+          <p class="menu-dietary-note">
+            <span>*</span> All our milks (Guernsey whole milk, Minor Figures oat, and homemade almond-macadamia) are steamed to 62°C for optimal sweetness. Organic gluten-free pastries available daily upon request.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. OUR CRAFT / PHILOSOPHY STRIP
+    ========================================================== -->
+    <section class="craft-section" id="craft">
+      <div class="container">
+        <div class="craft-grid">
+          
+          <div class="craft-card-image">
+            <img 
+              src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=80" 
+              alt="Artisanal coffee brewing and craft detail" 
+              class="craft-img"
+              loading="lazy"
+            >
+            <div class="craft-quote-overlay">
+              <p class="quote-text">"Coffee is not a rush; it is an intimate ceremony of time, temperature, and terroir."</p>
+              <span class="quote-author">— Lucas Vance, Head Roaster</span>
+            </div>
+          </div>
+
+          <div class="craft-card-text">
+            <span class="section-eyebrow">Our Philosophy</span>
+            <h2 class="craft-heading">Intentional Sourcing &amp; Slow Hearth Craft</h2>
+            <p class="craft-p">
+              We partner directly with smallholder coffee producers in Huila, Yirgacheffe, and Antigua, paying an average of <strong>2.8× Fair Trade minimums</strong>. We roast twice weekly in our vintage cast-iron drum roaster to celebrate distinct terroir rather than roast level.
+            </p>
+            <p class="craft-p">
+              Our bakehouse wakes up at 4:00 AM. Using heritage stone-ground wheat from regional farms and a 10-year-old sourdough mother, our baked goods ferment for a full 48 hours for rich digestible flavor and irresistible crust.
+            </p>
+
+            <div class="craft-stats-grid">
+              <div class="craft-stat">
+                <span class="stat-digit">12</span>
+                <span class="stat-label">Farm Direct Micro-Lots</span>
+              </div>
+              <div class="craft-stat">
+                <span class="stat-digit">48h</span>
+                <span class="stat-label">Slow Ferment Hearth Bake</span>
+              </div>
+              <div class="craft-stat">
+                <span class="stat-digit">0%</span>
+                <span class="stat-label">Artificial Additives</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. CUSTOMER REVIEWS (SOCIAL PROOF)
+    ========================================================== -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-eyebrow">Community Notes</span>
+          <h2 class="section-title">Words from Our Tables</h2>
+          <p class="section-subtitle">
+            What our regulars, wandering designers, and coffee purists have to say about quiet mornings at Aroma &amp; Ember.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+
+          <!-- Card 1 -->
+          <article class="review-card">
+            <div class="review-header">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+              </div>
+              <span class="review-badge">Verified Regular</span>
+            </div>
+            <blockquote class="review-quote">
+              "The Smoked Ember Pour-Over is pure wizardry. There is a tranquil quiet here that you simply cannot find in mainstream coffee houses. The Cardamom Morning Bun alone is worth waking up early on Saturdays."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar" aria-hidden="true">EL</div>
+              <div class="author-details">
+                <h4 class="author-name">Elena Rostova</h4>
+                <span class="author-role">Architect &amp; Daily Regular</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="review-card">
+            <div class="review-header">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+              </div>
+              <span class="review-badge">Verified Regular</span>
+            </div>
+            <blockquote class="review-quote">
+              "As someone obsessed with micro-lot coffees, Aroma &amp; Ember is a sanctuary. The baristas actually understand extraction yield and bean density. The space feels like an architectural sanctuary in Copenhagen."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar" aria-hidden="true">MK</div>
+              <div class="author-details">
+                <h4 class="author-name">Marcus Kim</h4>
+                <span class="author-role">Coffee Guild Member</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="review-card">
+            <div class="review-header">
+              <div class="review-stars" aria-label="5 out of 5 stars">
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+                <span class="star-icon">★</span>
+              </div>
+              <span class="review-badge">Verified Regular</span>
+            </div>
+            <blockquote class="review-quote">
+              "The Today's Special pairing was sensational. Pistachio and cardamom latte with the warm almond croissant made my whole week. Beautiful ceramic wares, bespoke leather booths, and warm acoustic jazz."
+            </blockquote>
+            <div class="review-author">
+              <div class="author-avatar" aria-hidden="true">SJ</div>
+              <div class="author-details">
+                <h4 class="author-name">Sarah Jenkins</h4>
+                <span class="author-role">Food &amp; Design Journalist</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       7. SPLIT LOCATION, HOURS & DARK ESPRESSO FOOTER
+  ========================================================== -->
+  <footer class="site-footer" id="location">
+    <div class="container footer-content">
+      
+      <!-- Left Column: Map Card & Contact Info -->
+      <div class="footer-col-left">
+        <div class="location-visual-card">
+          <img 
+            src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1000&q=80" 
+            alt="Interior architectural view of Aroma & Ember espresso counter and warm lighting"
+            class="location-img"
+            loading="lazy"
+          >
+          <div class="location-badge-overlay">
+            <svg class="pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Arts District Flagship</span>
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <h3 class="footer-title">Visit Our Hearth</h3>
+          
+          <address class="contact-address">
+            <strong>Aroma &amp; Ember Roastery &amp; Bakery</strong><br>
+            742 Ember Way, Arts District<br>
+            Seattle, WA 98104
+          </address>
+
+          <div class="contact-links">
+            <a href="tel:+12065550198" class="contact-link">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              (206) 555-0198
+            </a>
+
+            <a href="mailto:hello@aromaember.com" class="contact-link">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              hello@aromaember.com
+            </a>
+          </div>
+
+          <div class="directions-btn-wrap">
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-pill">
+              <span>Get Directions</span>
+              <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Opening Hours & Community -->
+      <div class="footer-col-right">
+        
+        <div class="hours-card">
+          <div class="hours-header">
+            <div>
+              <h3 class="footer-title">Opening Hours</h3>
+              <p class="hours-sub">Fresh bake ready from opening hour</p>
+            </div>
+            
+            <!-- Live status badge (dynamically managed by script.js) -->
+            <div class="status-pill status-open" id="store-status">
+              <span class="status-dot"></span>
+              <span class="status-text" id="status-text">Open Today • Until 7:00 PM</span>
+            </div>
+          </div>
+
+          <table class="hours-table" aria-label="Café Operating Hours">
+            <tbody>
+              <tr class="hours-row">
+                <td class="day-label">Monday – Friday</td>
+                <td class="hours-time">6:30 AM — 7:00 PM</td>
+              </tr>
+              <tr class="hours-row">
+                <td class="day-label">Saturday</td>
+                <td class="hours-time">7:00 AM — 8:00 PM</td>
+              </tr>
+              <tr class="hours-row">
+                <td class="day-label">Sunday</td>
+                <td class="hours-time">7:30 AM — 6:00 PM</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="roast-schedule">
+            <span class="schedule-icon">🔥</span>
+            <span><strong>Live Roasting Hours:</strong> Tuesdays &amp; Thursdays 9:00 AM – 1:00 PM. Watch our roasters at work.</span>
+          </div>
+        </div>
+
+        <!-- Newsletter & Social Proof -->
+        <div class="footer-newsletter">
+          <h4 class="newsletter-title">The Ember Dispatch</h4>
+          <p class="newsletter-desc">
+            Receive rare micro-lot releases, private tasting invitations, and seasonal recipes. Never spam.
+          </p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your email address..." required aria-label="Email address for newsletter">
+            <button type="submit" class="btn btn-accent btn-pill">Subscribe</button>
+          </form>
+          <div class="form-feedback" id="newsletter-feedback"></div>
+        </div>
+
+        <div class="footer-social-meta">
+          <div class="social-links" aria-label="Social media channels">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Spotify Café Playlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 11.5c4-1 8 0 10.5 1.5"></path>
+                <path d="M7 14.5c5-1 9.5 0 12.5 1.5"></path>
+                <path d="M9 8.5c3.5-1 6.5-.5 9 1"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </div>
+
+          <p class="copyright-text">
+            &copy; <span id="current-year">2026</span> Aroma &amp; Ember Roastery &amp; Bakery Co. All rights reserved. Designed with intention.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       8. RESERVATION MODAL (INTERACTIVE CTA)
+  ========================================================== -->
+  <div class="modal-backdrop" id="reserve-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="close-modal-btn" aria-label="Close reservation dialog">&times;</button>
+      
+      <div class="modal-header">
+        <span class="modal-eyebrow">Table &amp; Tasting Reservations</span>
+        <h3 class="modal-title" id="modal-heading">Reserve at Aroma &amp; Ember</h3>
+        <p class="modal-desc">
+          We reserve a curated collection of sunlit window tables and hearth tasting booths for guests seeking slow morning rituals.
+        </p>
+      </div>
+
+      <form class="reservation-form" id="reservation-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-name">Full Name</label>
+            <input type="text" id="res-name" class="form-control" placeholder="e.g. Julian Finch" required>
+          </div>
+          <div class="form-group">
+            <label for="res-email">Email Address</label>
+            <input type="email" id="res-email" class="form-control" placeholder="julian@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="res-guests">Number of Guests</label>
+            <select id="res-guests" class="form-control" required>
+              <option value="1">1 Guest (Window Bar)</option>
+              <option value="2" selected>2 Guests (Bespoke Table)</option>
+              <option value="3">3 Guests (Leather Booth)</option>
+              <option value="4">4 Guests (Hearth Round)</option>
+              <option value="5+">5+ Guests (Private Tasting Table)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="res-date">Date</label>
+            <input type="date" id="res-date" class="form-control" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="res-time">Seating Time</label>
+          <select id="res-time" class="form-control" required>
+            <option value="08:00">8:00 AM — Morning Quiet</option>
+            <option value="10:00" selected>10:00 AM — Hearth Bake Peak</option>
+            <option value="12:00">12:00 PM — Midday Pour-Over</option>
+            <option value="14:00">2:00 PM — Afternoon Tea &amp; Pastry</option>
+            <option value="16:00">4:00 PM — Golden Hour Espresso</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="res-notes">Special Requests / Dietary Notes (Optional)</label>
+          <input type="text" id="res-notes" class="form-control" placeholder="e.g. Sourdough allergy, Anniversary seating">
+        </div>
+
+        <div class="modal-actions">
+          <button type="submit" class="btn btn-primary btn-pill full-width">Confirm Reservation Request</button>
+        </div>
+      </form>
+
+      <div class="reservation-success" id="reservation-success" style="display: none;">
+        <div class="success-icon">✓</div>
+        <h4>Reservation Request Received</h4>
+        <p>A confirmation email has been dispatched. We look forward to welcoming you to the warmth of Aroma &amp; Ember.</p>
+        <button class="btn btn-primary btn-pill" id="close-success-btn">Return to Website</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
